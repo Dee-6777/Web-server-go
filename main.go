@@ -17,17 +17,18 @@ import (
 type todo struct { // struct and slices has been used as database
 	ID        string `json:"id"`
 	Item      string `json:"title"`
-	Duration  string `json:"time"`
+	Time      string `json:"time"`
 	Completed string `json:"completed"`
 }
 
 var todos = []todo{ // slice of type todo has been declared and initialised with some values
-	{ID: "1", Item: "Clean Room", Duration: "10 min", Completed: "false"},
-	{ID: "2", Item: "Brush Teeth", Duration: "10 min", Completed: "false"},
-	{ID: "3", Item: "Go For a Walk", Duration: "15 min", Completed: "false"},
-	{ID: "4", Item: "Breakfast", Duration: "20 min", Completed: "false"},
-	{ID: "5", Item: "Study", Duration: "1 hour", Completed: "false"},
-	{ID: "6", Item: "Attend Meeting", Duration: "30 min", Completed: "false"},
+	{ID: "1", Item: "Make your bed", Time: "23:46", Completed: "false"},
+	{ID: "2", Item: "Brush your Teeth", Time: "22:48", Completed: "false"},
+	{ID: "3", Item: "Go For a Walk", Time: "22:40", Completed: "false"},
+	{ID: "4", Item: "It's Breakfast time!", Time: "10:24", Completed: "false"},
+	{ID: "5", Item: "Take a shower", Time: "02:52", Completed: "false"},
+	{ID: "6", Item: "Standup", Time: "02:53", Completed: "false"},
+	{ID: "7", Item: "Take a Break", Time: "02:34", Completed: "false"},
 }
 
 /*................................ controllers ..................................................*/
